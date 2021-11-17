@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<title>Auto Insurance Quote Form</title>
+</head>
+<body>
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <center><h2>Auto Insurance Quote Form</h2></center>
+      <form action="submit_phpcrm_form.php" method="POST">
+        <div class="row">
+          <div class="col-50">
+            <input type="text" id="name" name="driver_name" required placeholder="Name">  
+          </div>
+          <div class="col-50">
+            <input type="date" name="driver_dob" required>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-50">
+                <input type="email" name="email" required placeholder="Email">
+            </div>
+            <div class="col-50">
+               <input type="number" name="phone" required placeholder="Phone">
+           </div>
+           </div>
+            <div class="row">
+              <div class="col-50">
+                <textarea name="address" id="address" placeholder="Street Address" rows="3" required></textarea>
+              </div>     
+         </div>
+         <div class="row">
+             <div class="col-50">
+                 <input type="text" name="city" required placeholder="City">
+             </div>
+             <div class="col-50">
+                <input type="text" name="state" required placeholder="State">
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-50">
+                <input type="number" name="zip_code" required placeholder="Zip Code">
+            </div>
+            <div class="col-50">
+               <input type="text" name="country" required placeholder="Country">
+           </div>
+        </div>
+        <div class="row">
+          <div class="col-50">
+
+            <input type="text" id="vehicle_model" name="vehicle_model" required placeholder="Vehicle Model">  
+          </div>
+          <div class="col-50">
+             <select name="year_febrication" id="">
+              <option value="null">Year of Fabrication</option>
+              <option value="2021">2021</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value="2017">2017</option>
+              <option value="2016">2016</option>
+             </select>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-50">
+              <input type="text" id="License Number" name="license_number" required placeholder="License Number">  
+            </div>
+            <div class="col-50">
+              <select name="insurance_covrage" id="insurance_covrage">
+                <option value="null">Insurance Coverage</option>
+                <option value="Rs 10000">Rs 10,000</option>
+                <option value="Rs 20000">Rs 20,000</option>
+                <option value="Rs 30000">Rs 30,000</option>
+                <option value="Rs 40000">Rs 40,000</option>
+                <option value="Rs 50000">Rs 50,000</option>
+                <option value="Rs 60000">Rs 60,000</option>
+               </select>
+              
+            </div>
+            </div>
+             
+            <div class="row">
+              <div class="col-50">
+                <textarea name="any_mess" id="any_mess" placeholder="Any Message" rows="3" required></textarea>
+              </div>     
+         </div>
+         <input type="submit" value="SEND" class="btn">
+       </div>
+       
+        </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
